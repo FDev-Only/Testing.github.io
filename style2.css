@@ -1,0 +1,97 @@
+/* Reset CSS untuk menghilangkan margin/padding default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg);
+  background-size: cover;
+  color: white;
+}
+
+p, h1 {
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap; /* Pastikan navbar tidak terbungkus ke baris baru */
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #8ebff3;  /* Warna hover */
+}
+
+/* Main section */
+.welcome-section {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.small-text {
+  font-size: 14px;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row; /* Tetap dalam satu baris */
+    justify-content: space-around; /* Agar item menyebar rata */
+  }
+
+  .navbar nav ul {
+    gap: 8px; /* Jarak antar item navbar lebih kecil */
+  }
+
+  .navbar .logo {
+    font-size: 20px; /* Ukuran logo lebih kecil */
+  }
+
+  .navbar nav ul li a {
+    font-size: 14px; /* Ukuran font navbar lebih kecil */
+    padding: 5px; /* Padding lebih kecil */
+  }
+
+  .welcome-section h1 {
+    font-size: 28px;
+  }
+
+  .small-text {
+    font-size: 12px;
+  }
+}
